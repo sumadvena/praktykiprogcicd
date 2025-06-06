@@ -19,9 +19,15 @@ jobs:
       - name: Test with Pytest
         run: |
           pytest
+      - name: Lint with Pylint
+        run: |
+          pylint ./utils.py
       - name: Lint with Ruff
         run: |
           ruff check utils.py
       - name: Format with Ruff
         run: |
           ruff format .
+      - name: Format with Black
+        run: |
+          black .
