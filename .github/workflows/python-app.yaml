@@ -24,4 +24,4 @@ jobs:
           ruff check utils.py
       - name: Format with Ruff
         run: |
-          ruff format utils.py
+          ruff format .
